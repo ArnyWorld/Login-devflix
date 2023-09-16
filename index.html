@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devflix</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__link">
+        <img src="img/logo.png" class="header__logo" alt="Logo Devflix" />
+      </a>
+    </header>
+    <main class="main">
+      <div class="formContainer containerT">
+        <form action="" class="form">
+          <h2 class="form__title">Inicia sesión</h2>
+          <div class="form__control">
+            <input type="text" id="email" class="form__input" placeholder=" " />
+            <label for="email" class="form__label"
+              >Email o número de teléfono</label
+            >
+          </div>
+          <div class="form__control">
+            <input
+              type="password"
+              id="password"
+              class="form__input"
+              placeholder=" "
+            />
+            <label for="password" class="form__label">Contraseña</label>
+          </div>
+          <input type="submit" value="Iniciar sesión" class="input__submit" />
+        </form>
+        <div class="help">
+          <div class="help__container">
+            <input type="checkbox" name="rememberme" id="rememberme" />
+            <label for="rememberme">Recuérdame</label>
+          </div>
+
+          <a href="#" class="help__link"> ¿Necesitas ayuda?</a>
+        </div>
+        <p class="formContainer__subscribe">
+          ¿Primera vez en Netflix? <a href="#">Suscribete ahora.</a>
+        </p>
+        <p class="formContainer__info">
+          Esta página está protegida por Google reCAPTCHA para comprobar que no
+          eres un robot. <a href="#">Más info.</a>
+        </p>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footerContent">
+        <p class="footerContent__call">
+          ¿Preguntas? Llama al <a href="#">1 (408) 329-9558 (USA)</a>
+        </p>
+
+        <ul class="footerContent__links">
+          <li class="footerContent__link">
+            <a href="#" class="footerContent__item">Preguntas frecuentes</a>
+          </li>
+          <li class="footerContent__link">
+            <a href="#" class="footerContent__item">Centro de ayuda </a>
+          </li>
+          <li class="footerContent__link">
+            <a href="#" class="footerContent__item">Términos de uso </a>
+          </li>
+          <li class="footerContent__link">
+            <a href="#" class="footerContent__item">Privacidad </a>
+          </li>
+          <li class="footerContent__link">
+            <a href="#" class="footerContent__item">Preferencias de cookies </a>
+          </li>
+          <li class="footerContent__link">
+            <a href="#" class="footerContent__item">Información corporativa </a>
+          </li>
+        </ul>
+        <select name="languajes" class="fa" id="languajes">
+          <option value="spanish">
+            &#xf0ac; &nbsp; &nbsp; <span>Español</span>
+          </option>
+          <option value="english">&#xf0ac; &nbsp; &nbsp;English</option>
+        </select>
+      </div>
+    </footer>
+    <script>
+      let option = document.querySelector("#languajes option");
+      option.textContent = option.textContent.toLowerCase();
+    </script>
+  </body>
+</html>
