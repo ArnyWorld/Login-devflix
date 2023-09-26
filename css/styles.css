@@ -35,11 +35,11 @@ body{
     padding: 0.5rem 0.7rem;
 }
 .header__logo{
-    width: 150px;
+    width: 100px;
 }
 .formContainer{
     border-bottom: 1px solid var(--grayColor);
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
 }
 .form{
     margin-bottom: 0.7rem;
@@ -47,15 +47,18 @@ body{
 .form__title{
     font-family: var(--font);
     color: var(--WhiteColor);
-    font-weight: 700;
+    font-weight: 400;
     font-size: 2rem;
     margin-bottom: 1.2rem;
 }
 .form__control{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     position: relative;
     height: 40px;
     width: 100%;
+}
+.form__control:nth-child(3){
+    margin-bottom: 3rem;
 }
 .form__input{
     position: absolute;
@@ -173,7 +176,13 @@ body{
     text-transform: capitalize!important;
 }
 
-@media (min-width:768px){
+@media (min-width:768px) and (max-width:1199px){
+    body{
+        /* background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../img/background_.jpg); */
+        background-size: cover;
+        position: relative;
+        min-height: 100vh;
+    }
     .header{
         padding: 0.7rem;
     }
@@ -190,17 +199,27 @@ body{
     }
     .formContainer{
         border-bottom:none;
-        height: 60vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
+        min-height: 600px;        
+        background-color: red;
+    }
+    .formContainer{
+        background-color: var(--layerDark);
+        padding: 0rem 3rem 7rem 3rem;
+        margin-bottom: 4rem;
+    }
+    .footer{
+        background-color: var(--layerDark);
+        padding: 1.5rem 0;
+        width: 100%;
     }
 }
 
 @media (min-width:1200px){
     body{
-        background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url(../img/background_.jpg);
+        background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../img/background_.jpg);
         background-size: cover;
         position: relative;
         min-height: 100vh;
@@ -209,20 +228,29 @@ body{
         width: 420px;
         margin: 0 auto;
     }
+    .header{
+        padding: 2rem 2rem;
+        position: absolute;
+        width: 100%;
+    }
     .header__logo{
         width: 200px;
     }
     .formContainer{
         background-color: var(--layerDark);
-        padding: 4rem 3rem 7rem 3rem;
-        margin-bottom: 4rem;
+        padding: 4rem 3rem 8rem 3rem;
+        min-height: 600px;
     }
     .footer{
         width: 100%;
         background-color: var(--layerDark);
-        padding: 1.5rem 0;
+        padding: 1.5rem 0 4rem 0;
     }
     .main{
-        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 850px;
     }
 }
