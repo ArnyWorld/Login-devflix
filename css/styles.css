@@ -173,7 +173,15 @@ body{
     width: 150px;
     display: inline-block;
     color: var(--grayColor);  
-    text-transform: capitalize!important;
+    text-transform: lowercase!important;
+}
+#languajes option{
+    background-color: #000000;
+    font-family: var(--font)!important;
+}
+#languajes option span{
+    font-family: var(--font);
+    background-color: red!important;
 }
 
 @media (min-width:768px) and (max-width:1199px){
@@ -185,6 +193,9 @@ body{
     }
     .header{
         padding: 0.7rem;
+    }
+    .header__logo{
+        width: 200px;
     }
     .container{
         width: 90%;
@@ -241,10 +252,16 @@ body{
         padding: 4rem 3rem 8rem 3rem;
         min-height: 600px;
     }
+    .footerContent__links{
+        grid-template-columns: repeat(4, 1fr);
+    }
     .footer{
-        width: 100%;
         background-color: var(--layerDark);
         padding: 1.5rem 0 4rem 0;
+    }
+    .footer .container{
+        width: 50%;
+        margin: 0 auto;
     }
     .main{
         display: flex;
