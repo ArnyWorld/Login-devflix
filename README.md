@@ -1,3 +1,3 @@
 ## Login Devflix
 
-![Login Devflix](./img/devflix.jpg)
+![Login Devflix](./img/devflix-poster.jpg)
