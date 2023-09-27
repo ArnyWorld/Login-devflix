@@ -22,22 +22,37 @@
     </header>
     <main class="main">
       <div class="formContainer containerT">
-        <form action="" class="form">
+        <form action="" class="form" autocomplete="off">
           <h2 class="form__title">Inicia sesión</h2>
-          <div class="form__control">
-            <input type="text" id="email" class="form__input" placeholder=" " />
-            <label for="email" class="form__label"
-              >Email o número de teléfono</label
-            >
+          <div class="form-container">
+            <div class="form__control">
+              <input
+                type="text"
+                id="email"
+                class="form__input"
+                placeholder=" "
+              />
+              <label for="email" class="form__label"
+                >Email o número de teléfono</label
+              >
+            </div>
+            <p class="alert hidden">
+              Ingresa un email o un número de teléfono válido.
+            </p>
           </div>
-          <div class="form__control">
-            <input
-              type="password"
-              id="password"
-              class="form__input"
-              placeholder=" "
-            />
-            <label for="password" class="form__label">Contraseña</label>
+          <div class="form-container">
+            <div class="form__control">
+              <input
+                type="password"
+                id="password"
+                class="form__input"
+                placeholder=" "
+              />
+              <label for="password" class="form__label">Contraseña</label>
+            </div>
+            <p class="alert hidden">
+              La contraseña debe tener entre 4 y 60 caracteres.
+            </p>
           </div>
           <input type="submit" value="Iniciar sesión" class="input__submit" />
         </form>
@@ -98,5 +113,6 @@
       let option = document.querySelector("#languajes option");
       option.textContent = option.textContent.toLowerCase();
     </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
